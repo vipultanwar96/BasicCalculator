@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first"/>
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/div"/>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second"
+        android:text="Add"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:text="Sub"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/mult"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub"
+        android:text="Mult"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/div"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mult"
+        android:text="Div"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
